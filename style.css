@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+.btn{
+    position: relative;
+    padding: 10px 15px;
+    background: #03a9f4;
+    color: white;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 15px;
+
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+#popup{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background: white;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.966);
+    transition: 0.5s;
+    visibility: hidden;
+}
+#popup.active{
+    visibility: visible;
+    top: 50%;
+}
+#popup .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#popup .content img{
+    max-width: 80px;
+
+}
+.content h1{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+
+}
+.content p{
+    text-align: center;
+    font-size: 16px;
+}
+.content .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+}
+.content .inputbox input{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    margin: 5px;
+}
+.inputbox input[type="submit"]{
+    background: black;
+    color:white;
+    max-width: 300px;
+    border: none;
+    border-radius: 50px;
+}
+.inputbox input[type="submit"]:hover{
+    letter-spacing: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.close{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    cursor: pointer;
+}
+
+

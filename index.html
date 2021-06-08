@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pop-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <a class="btn" onclick="popupToggle();">Regester Yourself</a>
+    <div id="popup">
+        <div class="content">
+            <img src="git.png">
+            <h1>Become Member</h1>
+            <p>Fastest growing Network for Gamers</p>
+            <div class="inputbox">
+                <input type="text" placeholder="Enter First Name">
+                <input type="text" placeholder="Enetr Last name">
+                <input type="email" placeholder="Email" >
+                <input type="text" placeholder="Date of Birth">
+                <input type="text" placeholder="Hobby">
+                <div class="inputbox">
+                    <input type="submit" value="Sing Up" class="btn">
+                </div>
+            </div>
+            <a href=""onclick="popupToggle();" class="close"><img src="close.jpg"></a>
+        </div>
+
+    </div>
+    <script>
+        function popupToggle(){
+            const popup=document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
